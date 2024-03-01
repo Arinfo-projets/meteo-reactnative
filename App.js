@@ -82,7 +82,7 @@ export default function App() {
                   <View style={{marginTop: 30}}>
                     <View style={{flexDirection: 'row', gap: 10 }}>
                       <Text style={styles.cityName}>{city.name}, {city.sys.country}</Text>
-                      <Icon name="map-marker" size={30} color="white" />
+                      <Icon name="map-marker" size={30} color="black" />
                     </View>
                     <View style={styles.temperatureResume}>
                     <Text style={{color: 'white'}}>{roundNumber(city.main.temp_max)}° / {roundNumber(city.main.temp_min)}°  </Text>
@@ -92,12 +92,12 @@ export default function App() {
 
                   <View style={{marginTop: 40, flexDirection: 'row', justifyContent: 'space-between'}}>
                          <CardComponent width="48%" >
-                              <Icon name="tint" color="white" size={30} />
+                              <Icon name="tint" color="black" size={30} />
                               <Text style={{fontWeight: 'bold', fontSize: 18, color: 'white'}}>Humidité</Text>
                               <Text style={{fontWeight: 'bold', fontSize: 14, color: 'white'}}>{city.main.humidity} %</Text>
                          </CardComponent>
                          <CardComponent width="48%" >
-                              <Icon name="angle-double-down" color="white" size={30} />
+                              <Icon name="angle-double-down" color="black" size={30} />
                               <Text style={{fontWeight: 'bold', fontSize: 18, color: 'white', textAlign: 'center'}}>Pression athmosphérique</Text>
                               <Text style={{fontWeight: 'bold', fontSize: 14, color: 'white'}}>{city.main.pressure} hPa</Text>
                          </CardComponent>
@@ -110,7 +110,7 @@ export default function App() {
                         latitude: city.coord.lat,
                         longitude: city.coord.lon,
                         latitudeDelta: 0.0922,
-    longitudeDelta: 0.0421,
+                        longitudeDelta: 0.0421,
                       }}
                     />
                   </View>

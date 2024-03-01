@@ -17,8 +17,7 @@ export default CardComponent = ({children, ...props}) => {
 const styles = StyleSheet.create({
     container:{
         alignItems: 'center',
-        justifyContent: 'center',
-        gap: 5,
+        justifyContent: 'space-between',
         height: 'auto',
         backgroundColor: color.$secondary,
         borderRadius: 5,
